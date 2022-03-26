@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;700&family=Raleway:wght@100;300;400;500;600;700&display=swap");
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+* {
+  font-family: "Abril Fatface", cursive;
+}
+
+.App {
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    max-width: 100%;
+  }
+}
+
+.loading_screen {
+  animation: slideout 5s forwards;
+}
+
+@keyframes slideout {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  30% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(50px);
+    visibility: hidden;
+  }
+}

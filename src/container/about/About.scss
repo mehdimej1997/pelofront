@@ -1,0 +1,92 @@
+.width-40 {
+  animation: w-40 0.8s forwards;
+}
+
+.width-50 {
+  animation: w-50 0.8s forwards;
+}
+
+.width-60 {
+  animation: w-60 0.8s forwards;
+}
+
+.width-70 {
+  animation: w-70 0.8s forwards;
+}
+
+.width-80 {
+  animation: w-80 0.8s forwards;
+}
+
+.width-90 {
+  animation: w-90 0.8s forwards;
+}
+
+.width-100 {
+  animation: w-100 0.8s forwards;
+}
+
+@keyframes w-40 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes w-50 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+@keyframes w-60 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+@keyframes w-70 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+@keyframes w-80 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+@keyframes w-90 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+@keyframes w-100 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.Down {
+  animation: animeDown 500ms forwards;
+}
+
+.Up {
+  animation: animeUp 500ms forwards;
+}
+
+@keyframes animeDown {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes animeUp {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
