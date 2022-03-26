@@ -6,12 +6,12 @@ import Contact from "./container/contact/Contact";
 import Home from "./container/home/Home";
 import ImageDetails from "./container/imageDetails/ImageDetails";
 import Portfolio from "./container/portfolio/Portfolio";
-import LoadingScreen from "./container/loading/LodingScreen";
+// import LoadingScreen from "./container/loading/LodingScreen";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
-  setTimeout(() => setIsLoaded(true), 4000);
+  setTimeout(() => setIsLoaded(true), 2000);
 
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
         <div className="h-24 w-24 border-solid border-b-[12px] border-l-[12px] absolute border-[#252525] left-0 bottom-0"></div>
       </div>
       <div className="relative z-50">
-        <LoadingScreen className="loading_screen" />
+        {/* <LoadingScreen className="loading_screen" /> */}
         <Routes>
           <Route index element={<Home isLoaded={isLoaded} />} />
           <Route path="/about" element={<About />} />

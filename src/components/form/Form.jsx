@@ -33,7 +33,7 @@ function Form() {
             required
           />
         </div>
-        <div>
+        <div className="mt-5">
           <button
             type="submit"
             className="bg-neutral-200 text-neutral-800 font-inter font-bold px-10 py-4 rounded-lg hover:text-neutral-100 hover:bg-neutral-800 transition-all duration-300"

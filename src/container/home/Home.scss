@@ -1,7 +1,6 @@
 .swiper {
   width: 100%;
   height: 100%;
-  filter: grayscale(70%);
 }
 
 .swiper-slide {
@@ -17,7 +16,7 @@
 }
 
 .swiper-slide-active {
-  filter: blur(2px);
+  filter: blur(0);
   opacity: 1;
   transition: filter ease-out 1.5s !important;
 }

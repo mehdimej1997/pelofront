@@ -17,10 +17,10 @@ function ImageDetails() {
       <div className={`App text-gray-100 m-auto text-center`}>
         <Navbar />
         <h1 className="text-2xl mt-16">Infos ...!</h1>
-        <div className="h-[600px] flex justify-center my-16">
+        <div className="h-[700px] flex justify-center my-16">
           <img
             src={imageDetails?.attributes?.image.data[0].attributes.url}
-            className="object-cover h-full w-3/4 responsive_img"
+            className="h-full responsive_img"
           />
         </div>
 
@@ -29,28 +29,24 @@ function ImageDetails() {
             {imageDetails?.attributes?.titre}
           </h1>
           <div className="flex flex-col">
-            <div className="w-3/4 sm:w-full">
+            <div className="w-3/4 sm:w-full my-6">
               <p className="raleway_font text-left tracking-wider font-medium text-neutral-400">
-                {imageDetails?.attributes?.description} Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Inventore, excepturi! Earum
-                eligendi tempore, dicta impedit nemo quam magni laboriosam
-                architecto fuga. Eligendi temporibus delectus voluptatum ex
-                corrupti est iusto at.
+                {imageDetails?.attributes?.description}
               </p>
             </div>
             <div>
-              <ul>
-                <li className="flex gap-10">
+              <ul className="w-36">
+                <li className="grid grid-cols-3 gap-10">
                   <span>Model</span>
                   <span>:</span>
                   <span>{imageDetails?.attributes?.model}</span>
                 </li>
-                <li className="flex gap-10 ">
+                <li className="grid grid-cols-3 gap-10 ">
                   <span>Ville</span>
                   <span>:</span>
                   <span>{imageDetails?.attributes?.ville}</span>
                 </li>
-                <li className="flex gap-10 ">
+                <li className="grid grid-cols-3 gap-10 ">
                   <span>Date</span>
                   <span>:</span>
                   <span>{imageDetails?.attributes?.model}</span>
